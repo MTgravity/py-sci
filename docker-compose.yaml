@@ -1,0 +1,16 @@
+version: '3'
+
+
+services: 
+
+  # db:
+
+
+  data-cruncher:
+    build:
+      context: ./docker
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/notebooks
+
